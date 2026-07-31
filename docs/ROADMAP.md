@@ -15,9 +15,27 @@ Desenvolver um sistema de gestão empresarial em Java com foco na aplicação de
 
 # Roadmap
 
+## Tecnologias
+
+- Java
+- Spring Boot
+- PostgreSQL
+- MongoDB
+- Angular
+- Node.js
+- Docker
+- Git
+- GitHub
+
+## Arquitetura e Ferramentas
+
+- API REST
+- UML (Diagramas)
+- Kanban (GitHub Projects)
+
 ## Fase 1 - Estrutura Inicial
 
-- [ ] Estrutura do projeto
+- [X] Estrutura do projeto
 - [ ] Menu principal
 - [ ] Organização dos pacotes
 - [ ] Padronização do código
