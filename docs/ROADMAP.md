@@ -36,7 +36,7 @@ Desenvolver um sistema de gestão empresarial em Java com foco na aplicação de
 ## Fase 1 - Estrutura Inicial
 
 - [X] Estrutura do projeto
-- [ ] Menu principal
+- [X] Menu principal
 - [ ] Organização dos pacotes
 - [ ] Padronização do código
 - [ ] Documentação inicial
