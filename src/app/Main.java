@@ -6,6 +6,10 @@ public class Main {
     public static void main(String[] args){
 
         Scanner scanner = new Scanner(System.in);
+
+        int opcao;
+
+        do {
         System.out.println("==================================");
         System.out.println("       Java Enterprise Lab    ");
         System.out.println("==================================");
@@ -16,7 +20,7 @@ public class Main {
         System.out.println("==================================");
         System.out.print("Digite uma opção: "); 
 
-        int opcao = scanner.nextInt();
+        opcao = scanner.nextInt();
 
 
        switch (opcao) {
@@ -40,6 +44,8 @@ public class Main {
             System.out.println("Opção inválida!");
 
        }
+
+    } while (opcao != 0);
 
         scanner.close();
 
