@@ -19,17 +19,27 @@ public class Main {
         int opcao = scanner.nextInt();
 
 
-        if (opcao == 1) {
-            System.out.println("=== Menu Funcionários ===");
-        } else if (opcao == 2) {
-            System.out.println("=== Menu Clientes ===");
-        } else if (opcao == 3) {
-            System.out.println("=== Menu Produtos ===");
-        } else if (opcao == 0) {
-            System.out.println("=== Encerrando o Sistema ===");
-        } else {
+       switch (opcao) {
+        case 1:
+            System.out.println("=== Menu Funcionários ==="); 
+            break;
+       
+        case 2:
+            System.out.println("=== Menu Clientes ==="); 
+            break;
+
+        case 3:
+            System.out.println("=== Menu Produtos ==="); 
+            break;
+
+        case 0:
+            System.out.println("=== Encerrando o Sistema ==="); 
+            break;
+
+        default:
             System.out.println("Opção inválida!");
-        }
+
+       }
 
         scanner.close();
 
