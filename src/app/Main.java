@@ -1,4 +1,5 @@
 package app;
+import app.model.Funcionario;
 
 import java.util.Scanner;
 
@@ -6,6 +7,14 @@ public class Main {
     public static void main(String[] args){
 
         Scanner scanner = new Scanner(System.in);
+
+         Funcionario funcionario = new Funcionario("Kamila", "Moraes", 23, "Desenvolvedora", 5000.00);
+         System.out.println(funcionario.getNome());
+         System.out.println(funcionario.getSobrenome());
+         System.out.println(funcionario.getIdade());
+         System.out.println(funcionario.getCargo());
+         System.out.println(funcionario.getSalario());
+
 
         int opcao;
 
@@ -49,6 +58,7 @@ public class Main {
 
         scanner.close();
 
+        
 
 
     }
