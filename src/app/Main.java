@@ -15,6 +15,20 @@ public class Main {
          System.out.println(funcionario.getCargo());
          System.out.println(funcionario.getSalario());
 
+         Funcionario funcionarioVazio = new Funcionario();
+
+         funcionarioVazio.setNome("Kamila");
+         funcionarioVazio.setSobrenome("Moraes");
+         funcionarioVazio.setIdade(23);
+         funcionarioVazio.setCargo("Analista");
+         funcionarioVazio.setSalario(5000.00);
+
+         System.out.println(funcionarioVazio.getNome());
+         System.out.println(funcionarioVazio.getSobrenome());
+         System.out.println(funcionarioVazio.getIdade());
+         System.out.println(funcionarioVazio.getCargo());
+         System.out.println(funcionarioVazio.getSalario());
+
 
         int opcao;
 
