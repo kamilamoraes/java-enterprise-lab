@@ -1,6 +1,7 @@
 package app;
 import app.model.Funcionario;
 import app.model.Cliente;
+import app.model.Produto;
 
 import java.util.Scanner;
 
@@ -43,6 +44,20 @@ public class Main {
         System.out.println(clienteVazio.getSobrenome());
         System.out.println(clienteVazio.getEmail());
         System.out.println(clienteVazio.getTelefone());
+
+        Produto produtoVazio = new Produto();
+
+        produtoVazio.setId(1);
+        produtoVazio.setNome("Notebook");
+        produtoVazio.setDescricao("Notebook para desenvolvimento");
+        produtoVazio.setPreco(3500.00);
+        produtoVazio.setQuantidade(10);
+
+        System.out.println(produtoVazio.getId());
+        System.out.println(produtoVazio.getNome());
+        System.out.println(produtoVazio.getDescricao());
+        System.out.println(produtoVazio.getPreco());
+        System.out.println(produtoVazio.getQuantidade());
 
 
         int opcao;
