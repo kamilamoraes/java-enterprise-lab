@@ -1,5 +1,6 @@
 package app;
 import app.model.Funcionario;
+import app.model.Cliente;
 
 import java.util.Scanner;
 
@@ -28,6 +29,20 @@ public class Main {
          System.out.println(funcionarioVazio.getIdade());
          System.out.println(funcionarioVazio.getCargo());
          System.out.println(funcionarioVazio.getSalario());
+
+         Cliente clienteVazio = new Cliente();
+
+         clienteVazio.setId(1);
+         clienteVazio.setNome("Maria");
+         clienteVazio.setSobrenome("Ribeiro");
+         clienteVazio.setEmail("mariaribr@gmail.com");
+         clienteVazio.setTelefone("6298888-7777");
+
+        System.out.println(clienteVazio.getId());
+        System.out.println(clienteVazio.getNome());
+        System.out.println(clienteVazio.getSobrenome());
+        System.out.println(clienteVazio.getEmail());
+        System.out.println(clienteVazio.getTelefone());
 
 
         int opcao;
