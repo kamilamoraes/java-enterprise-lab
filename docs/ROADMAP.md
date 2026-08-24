@@ -37,8 +37,6 @@ Desenvolver um sistema de gestão empresarial em Java com foco na aplicação de
 
 - [X] Estrutura do projeto
 - [X] Menu principal
-- [ ] Organização dos pacotes
-- [ ] Padronização do código
 - [ ] Documentação inicial
 
 ---
@@ -91,6 +89,7 @@ Desenvolver um sistema de gestão empresarial em Java com foco na aplicação de
 - [ ] Validação de dados
 - [ ] Tratamento de exceções
 - [ ] Arquitetura em camadas
+- [ ] Organização dos pacotes
 
 ---
 
@@ -104,6 +103,7 @@ Desenvolver um sistema de gestão empresarial em Java com foco na aplicação de
 
 ## Fase 8 - Qualidade
 
+- [ ] Padronização do código
 - [ ] Testes unitários
 - [ ] Melhorias de desempenho
 - [ ] Documentação técnica
