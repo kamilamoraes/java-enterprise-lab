@@ -37,7 +37,7 @@ Desenvolver um sistema de gestão empresarial em Java com foco na aplicação de
 
 - [X] Estrutura do projeto
 - [X] Menu principal
-- [ ] Documentação inicial
+- [X] Documentação inicial
 
 ---
 
