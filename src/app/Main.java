@@ -4,13 +4,23 @@ import app.model.Cliente;
 import app.model.Produto;
 
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args){
 
         Scanner scanner = new Scanner(System.in);
 
+        ArrayList<Funcionario> funcionarios = new ArrayList<>();
+
          Funcionario funcionario = new Funcionario("Kamila", "Moraes", 23, "Desenvolvedora", 5000.00);
+
+         funcionarios.add(funcionario);
+         System.out.println(funcionarios.size());
+
+         funcionarios.add(funcionario);
+         System.out.println(funcionarios.size());
+
          System.out.println(funcionario.getNome());
          System.out.println(funcionario.getSobrenome());
          System.out.println(funcionario.getIdade());
@@ -74,11 +84,29 @@ public class Main {
         System.out.print("Digite uma opção: "); 
 
         opcao = scanner.nextInt();
+        scanner.nextLine();
 
 
        switch (opcao) {
         case 1:
             System.out.println("=== Menu Funcionários ==="); 
+       
+
+            System.out.println("Nome: ");
+            String nome = scanner.nextLine();
+
+            System.out.println("Sobrenome: ");
+            String sobrenome = scanner.nextLine();
+
+            System.out.println("Idade: ");
+            int idade = scanner.nextInt();
+
+            System.out.println("Cargo: ");
+            String cargo = scanner.nextLine();
+
+            System.out.println("Salário: ");
+            double salario = scanner.nextDouble();
+
             break;
        
         case 2:
