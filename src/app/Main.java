@@ -100,12 +100,18 @@ public class Main {
 
             System.out.println("Idade: ");
             int idade = scanner.nextInt();
+            scanner.nextLine();
 
             System.out.println("Cargo: ");
             String cargo = scanner.nextLine();
 
             System.out.println("Salário: ");
             double salario = scanner.nextDouble();
+
+
+            Funcionario novoFuncionario = new Funcionario(nome, sobrenome, idade, cargo, salario);
+            funcionarios.add(novoFuncionario);
+            System.out.println(funcionarios.size());
 
             break;
        
