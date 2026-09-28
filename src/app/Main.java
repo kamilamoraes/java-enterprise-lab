@@ -34,9 +34,22 @@ public class Main {
        switch (opcao) {
         case 1:
             System.out.println("=== Menu Funcionários ==="); 
-       
 
-            System.out.println("Nome: ");
+            int opcaoFuncionario;
+
+            do {
+
+                System.out.println("1 - Cadastrar funcionário");
+                System.out.println("2 - Listar funcionários");
+                System.out.println("0 - Voltar");
+                System.out.print("Digite uma opção: ");
+
+                opcaoFuncionario = scanner.nextInt();
+                scanner.nextLine();
+
+            switch (opcaoFuncionario) {
+                case 1:
+                    System.out.println("Nome: ");
             String nome = scanner.nextLine();
 
             System.out.println("Sobrenome: ");
@@ -56,6 +69,24 @@ public class Main {
             Funcionario novoFuncionario = new Funcionario(nome, sobrenome, idade, cargo, salario);
             funcionarios.add(novoFuncionario);
             System.out.println(funcionarios.size());
+
+           
+                break;
+
+                 case 2:
+        // listagem dos funcionários
+                    break;
+
+                 case 0:
+                     System.out.println("Voltando ao menu principal...");
+                    break;
+
+                default:
+                    System.out.println("Opção inválida!");
+        }
+
+            } while (opcaoFuncionario != 0);
+            
 
             break;
        
