@@ -77,7 +77,13 @@ public class Main {
                      System.out.println("Listando funcionários...");
 
                     for (Funcionario funcionario : funcionarios) {
-                    System.out.println(funcionario.getNome());
+
+                    System.out.println("Nome: " + funcionario.getNome());
+                    System.out.println("Sobrenome: " + funcionario.getSobrenome());
+                    System.out.println("Idade: " + funcionario.getIdade());
+                    System.out.println("Cargo: " + funcionario.getCargo());
+                    System.out.println("Salário: " + funcionario.getSalario());
+
                      }
                     break;
 
