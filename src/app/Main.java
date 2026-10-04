@@ -74,7 +74,11 @@ public class Main {
                 break;
 
                  case 2:
-        // listagem dos funcionários
+                     System.out.println("Listando funcionários...");
+
+                    for (Funcionario funcionario : funcionarios) {
+                    System.out.println(funcionario.getNome());
+                     }
                     break;
 
                  case 0:
@@ -86,12 +90,12 @@ public class Main {
         }
 
             } while (opcaoFuncionario != 0);
-            
+
 
             break;
        
         case 2:
-            System.out.println("=== Menu Clientes ==="); 
+             System.out.println("=== Menu Clientes ===");
             break;
 
         case 3:
