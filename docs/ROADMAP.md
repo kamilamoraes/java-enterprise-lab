@@ -43,8 +43,8 @@ Desenvolver um sistema de gestão empresarial em Java com foco na aplicação de
 
 ## Fase 2 - Gestão de Funcionários
 
-- [ ] Cadastro de funcionários
-- [ ] Listagem
+- [X] Cadastro de funcionários
+- [X] Listagem
 - [ ] Consulta por ID
 - [ ] Atualização de dados
 - [ ] Remoção de funcionários
