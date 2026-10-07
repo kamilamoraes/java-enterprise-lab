@@ -2,11 +2,13 @@ package app.model;
 
 public class Funcionario {
     
+    private int id;
     private String nome;
     private String sobrenome;
     private int idade;
     private String cargo;
     private double salario;
+    
 
     public Funcionario(String nome, String sobrenome, int idade, String cargo, double salario) {
 
@@ -21,6 +23,10 @@ public class Funcionario {
 
     public Funcionario() {
 
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getNome() {
@@ -41,6 +47,10 @@ public class Funcionario {
 
     public double getSalario() {
         return salario;
+    }
+
+     public void setId(int id) {
+        this.id = id;
     }
 
     public void setNome(String nome) {
