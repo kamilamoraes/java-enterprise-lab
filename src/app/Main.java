@@ -12,6 +12,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         ArrayList<Funcionario> funcionarios = new ArrayList<>();
+        int proximoId = 1;
 
 
         int opcao;
@@ -67,8 +68,14 @@ public class Main {
 
 
             Funcionario novoFuncionario = new Funcionario(nome, sobrenome, idade, cargo, salario);
+
+            novoFuncionario.setId(proximoId);
+            proximoId++;
+
             funcionarios.add(novoFuncionario);
-            System.out.println(funcionarios.size());
+
+            System.out.println("Funcionario cadastrado com sucesso!");
+            System.out.println("ID: " + novoFuncionario.getId());
 
            
                 break;
@@ -120,9 +127,7 @@ public class Main {
     } while (opcao != 0);
 
         scanner.close();
+    }    
 
-        
 
-
-    }
 }
