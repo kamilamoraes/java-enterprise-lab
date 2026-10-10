@@ -85,6 +85,7 @@ public class Main {
 
                     for (Funcionario funcionario : funcionarios) {
 
+                    System.out.println("ID: " + funcionario.getId());
                     System.out.println("Nome: " + funcionario.getNome());
                     System.out.println("Sobrenome: " + funcionario.getSobrenome());
                     System.out.println("Idade: " + funcionario.getIdade());
