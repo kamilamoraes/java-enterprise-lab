@@ -42,6 +42,7 @@ public class Main {
 
                 System.out.println("1 - Cadastrar funcionário");
                 System.out.println("2 - Listar funcionários");
+                System.out.println("3 - Buscar funcionário por ID");
                 System.out.println("0 - Voltar");
                 System.out.print("Digite uma opção: ");
 
@@ -93,6 +94,36 @@ public class Main {
                     System.out.println("Salário: " + funcionario.getSalario());
 
                      }
+                    break;
+
+                 case 3:
+                    System.out.println("=== Buscar Funcionário ===");
+                    System.out.println("Digite o ID do funcionário: ");
+
+                    int idBusca = scanner.nextInt();
+
+                    boolean encontrado = false;
+
+                    for (Funcionario funcionario : funcionarios) {
+                        if (funcionario.getId() == idBusca) {
+                            encontrado = true;
+                            
+                        System.out.println("Funcionário encontrado!");
+                        System.out.println("ID: " + funcionario.getId());
+                        System.out.println("Nome: " + funcionario.getNome());
+                        System.out.println("Sobrenome: " + funcionario.getSobrenome());
+                        System.out.println("Idade: " + funcionario.getIdade());
+                        System.out.println("Cargo: " + funcionario.getCargo());
+                        System.out.println("Salário: " + funcionario.getSalario());
+
+                        }
+
+                    }
+
+                    if (encontrado == false) {
+                            System.out.println("Funcionário não encontrado!");
+                        }
+
                     break;
 
                  case 0:
