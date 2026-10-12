@@ -13,6 +13,8 @@ The project will be developed incrementally, following the evolution of my learn
 
 The project is currently in its initial development stage, with the core structure and basic domain models being implemented.
 
+Employee management currently supports registration, listing, searching by ID, and updating employee data. Employee removal is still pending.
+
 ## Technologies
 
 ### Currently Used
