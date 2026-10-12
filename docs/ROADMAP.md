@@ -46,8 +46,8 @@ Desenvolver um sistema de gestão empresarial em Java com foco na aplicação de
 - [X] Cadastro de funcionários
 - [X] Listagem
 - [X] Consulta por ID
-- [ ] Atualização de dados
-- [ ] Remoção de funcionários
+- [X] Atualização de dados
+- [X] Remoção de funcionários
 
 ---
 
