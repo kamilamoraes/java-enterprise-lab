@@ -43,6 +43,7 @@ public class Main {
                 System.out.println("1 - Cadastrar funcionário");
                 System.out.println("2 - Listar funcionários");
                 System.out.println("3 - Buscar funcionário por ID");
+                System.out.println("4 - Atualizar funcionário");
                 System.out.println("0 - Voltar");
                 System.out.print("Digite uma opção: ");
 
@@ -123,6 +124,57 @@ public class Main {
                     if (encontrado == false) {
                             System.out.println("Funcionário não encontrado!");
                         }
+
+                    break;
+
+                 case 4:
+                    System.out.println("=== Atualizar Funcionário ===");
+                    System.out.println("Digite o ID do funcionário: ");
+                    int idAtualizar = scanner.nextInt();
+
+                    boolean funcionarioEncontrado = false;
+
+                    for (Funcionario funcionario : funcionarios) {
+                        if (funcionario.getId() == idAtualizar) {
+                            funcionarioEncontrado = true;
+
+                            System.out.println("Funcionário encontrado!");
+
+                            System.out.println("Digite o novo nome: ");
+                            scanner.nextLine();
+                            String novoNome = scanner.nextLine();
+
+                            funcionario.setNome(novoNome);
+
+                            System.out.println("Digite o novo sobrenome: ");
+                            String novoSobrenome = scanner.nextLine();
+
+                            funcionario.setSobrenome(novoSobrenome);
+
+                            System.out.println("Digite a nova idade: ");
+                            int novaIdade = scanner.nextInt();
+
+                            funcionario.setIdade(novaIdade);
+
+                            scanner.nextLine();
+
+                            System.out.println("Digite o novo cargo: ");
+                            String novoCargo = scanner.nextLine();
+
+                            funcionario.setCargo(novoCargo);
+
+                            System.out.println("Digite o novo salário: ");
+                            double novoSalario = scanner.nextDouble();
+
+                            funcionario.setSalario(novoSalario);
+
+                            System.out.println("Funcionário atualizado com sucesso!");
+                        }
+                    }
+
+                    if (funcionarioEncontrado == false) {
+                        System.out.println("Funcionário não encontrado!");
+                    }
 
                     break;
 
