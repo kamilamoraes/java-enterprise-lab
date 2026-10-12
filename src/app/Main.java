@@ -44,6 +44,7 @@ public class Main {
                 System.out.println("2 - Listar funcionários");
                 System.out.println("3 - Buscar funcionário por ID");
                 System.out.println("4 - Atualizar funcionário");
+                System.out.println("5 - Remover funcionário");
                 System.out.println("0 - Voltar");
                 System.out.print("Digite uma opção: ");
 
@@ -173,6 +174,33 @@ public class Main {
                     }
 
                     if (funcionarioEncontrado == false) {
+                        System.out.println("Funcionário não encontrado!");
+                    }
+
+                    break;
+
+                 case 5:
+                    
+                    System.out.println("Remover funcionário");
+                    System.out.println("Digite o ID do funcionário que deseja remover: ");
+
+                    int idRemover = scanner.nextInt();
+
+                    boolean removido = false;
+
+                    for (int i = 0; i < funcionarios.size(); i++) {
+                        if (funcionarios.get(i).getId() == idRemover) {
+                            funcionarios.remove(i);
+                            removido = true;
+                            break;
+                            
+                        }
+   
+                    }
+
+                     if (removido) {
+                        System.out.println("Funcionário removido com sucesso!");
+                     } else {
                         System.out.println("Funcionário não encontrado!");
                     }
 
