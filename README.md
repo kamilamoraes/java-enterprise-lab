@@ -11,9 +11,9 @@ The project will be developed incrementally, following the evolution of my learn
 
 🚧 In development
 
-The project is currently in its initial development stage, with the core structure and basic domain models being implemented.
+The project is currently evolving from its initial structure into a functional business management system.
 
-Employee management currently supports registration, listing, searching by ID, and updating employee data. Employee removal is still pending.
+Employee and customer management currently support registration, listing, searching by ID, updating data, and removal. Product management is the next planned development stage.
 
 ## Technologies
 
@@ -52,6 +52,8 @@ src/
 - Product domain model
 - Object creation using constructors
 - Encapsulation with private attributes, getters, and setters
+- Employee management with complete CRUD operations
+- Customer management with complete CRUD operations
 
 ## Roadmap
 
@@ -71,7 +73,5 @@ The roadmap may be adjusted as the project evolves and new requirements or learn
 ## Next Steps
 
 - Complete the initial UML class diagram
-- Implement employee registration and management
-- Implement customer registration and management
 - Implement product registration and management
 - Continue improving the project structure as new features are introduced

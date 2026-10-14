@@ -53,11 +53,11 @@ Desenvolver um sistema de gestão empresarial em Java com foco na aplicação de
 
 ## Fase 3 - Gestão de Clientes
 
-- [ ] Cadastro de clientes
-- [ ] Listagem
-- [ ] Consulta por ID
-- [ ] Atualização de dados
-- [ ] Remoção de clientes
+- [X] Cadastro de clientes
+- [X] Listagem
+- [X] Consulta por ID
+- [X] Atualização de dados
+- [X] Remoção de clientes
 
 ---
 
