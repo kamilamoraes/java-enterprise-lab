@@ -8,7 +8,7 @@ public class Cliente {
     private String email;
     private String telefone;
 
-    public Cliente(int id, String nome, String sobrenome, String email, String telefone) {
+   public Cliente(int id, String nome, String sobrenome, String email, String telefone) {
 
        this.id = id;
        this.nome = nome;
@@ -20,6 +20,15 @@ public class Cliente {
 
     public Cliente() {
    
+    }
+
+    public Cliente(String nome, String sobrenome, String email, String telefone) {
+
+       this.nome = nome;
+       this.sobrenome = sobrenome;
+       this.email = email;
+       this.telefone = telefone;
+       
     }
 
     public int getId() {

@@ -243,23 +243,20 @@ public class Main {
                 switch (opcaoCliente) {
                 case 1:
                     System.out.println("Nome: ");
-            String nome = scanner.nextLine();
+                    String nome = scanner.nextLine();
 
-            System.out.println("Sobrenome: ");
-            String sobrenome = scanner.nextLine();
+                    System.out.println("Sobrenome: ");
+                    String sobrenome = scanner.nextLine();
 
-            System.out.println("Idade: ");
-            int idade = scanner.nextInt();
-            scanner.nextLine();
+                    System.out.println("Email: ");
+                    String email = scanner.nextLine();
 
-            System.out.println("Cargo: ");
-            String cargo = scanner.nextLine();
+                    System.out.println("Telefone: ");
+                    String telefone = scanner.nextLine();
 
-            System.out.println("Salário: ");
-            double salario = scanner.nextDouble();
+                    
 
-
-            Cliente novoCliente = new Cliente(nome, sobrenome, idade, cargo, salario);
+            Cliente novoCliente = new Cliente(nome, sobrenome, email, telefone);
 
             novoCliente.setId(proximoIdCliente);
             proximoIdCliente++;
@@ -280,9 +277,8 @@ public class Main {
                     System.out.println("ID: " + cliente.getId());
                     System.out.println("Nome: " + cliente.getNome());
                     System.out.println("Sobrenome: " + cliente.getSobrenome());
-                    System.out.println("Idade: " + cliente.getIdade());
-                    System.out.println("Cargo: " + cliente.getCargo());
-                    System.out.println("Salário: " + cliente.getSalario());
+                    System.out.println("Email: " + cliente.getEmail());
+                    System.out.println("Telefone: " + cliente.getTelefone());
 
                      }
                     break;
@@ -303,9 +299,8 @@ public class Main {
                         System.out.println("ID: " + cliente.getId());
                         System.out.println("Nome: " + cliente.getNome());
                         System.out.println("Sobrenome: " + cliente.getSobrenome());
-                        System.out.println("Idade: " + cliente.getIdade());
-                        System.out.println("Cargo: " + cliente.getCargo());
-                        System.out.println("Salário: " + cliente.getSalario());
+                        System.out.println("Email: " + cliente.getEmail());
+                        System.out.println("Telefone: " + cliente.getTelefone());
 
                         }
 
@@ -341,22 +336,19 @@ public class Main {
 
                             cliente.setSobrenome(novoSobrenome);
 
-                            System.out.println("Digite a nova idade: ");
-                            int novaIdade = scanner.nextInt();
+                            System.out.println("Digite o novo email: ");
+                            String novoEmail = scanner.nextLine();
 
-                            cliente.setIdade(novaIdade);
+                            cliente.setEmail(novoEmail);
 
                             scanner.nextLine();
 
-                            System.out.println("Digite o novo cargo: ");
-                            String novoCargo = scanner.nextLine();
+                            System.out.println("Digite o novo telefone: ");
+                            String novoTelefone = scanner.nextLine();
 
-                            cliente.setCargo(novoCargo);
+                            cliente.setTelefone(novoTelefone);
 
-                            System.out.println("Digite o novo salário: ");
-                            double novoSalario = scanner.nextDouble();
-
-                            cliente.setSalario(novoSalario);
+                            scanner.nextLine();
 
                             System.out.println("Cliente atualizado com sucesso!");
                         }
