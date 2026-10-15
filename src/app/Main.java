@@ -403,6 +403,180 @@ public class Main {
 
         case 3:
             System.out.println("=== Menu Produtos ==="); 
+
+            int opcaoProduto;
+
+            do {
+
+                System.out.println("1 - Cadastrar produto");
+                System.out.println("2 - Listar produto");
+                System.out.println("3 - Buscar produto por ID");
+                System.out.println("4 - Atualizar produto");
+                System.out.println("5 - Remover produto");
+                System.out.println("0 - Voltar");
+                System.out.print("Digite uma opção: ");
+
+                opcaoProduto = scanner.nextInt();
+                scanner.nextLine();
+
+                switch (opcaoProduto) {
+                case 1:
+                    System.out.println("Nome: ");
+                    String nome = scanner.nextLine();
+
+                    System.out.println("Descrição: ");
+                    String descricao = scanner.nextLine();
+
+                    System.out.println("Preço: ");
+                    double preco = scanner.nextDouble();
+
+                    System.out.println("Quantidade: ");
+                    int quantidade = scanner.nextInt();
+
+                    
+
+            Produto novoProduto = new Produto(nome, sobrenome, email, telefone);
+
+            novoProduto.setId(proximoIdProduto);
+            proximoIdProduto++;
+
+            produtos.add(novoProduto);
+
+            System.out.println("Produto cadastrado com sucesso!");
+            System.out.println("ID: " + novoProduto.getId());
+
+           
+                break;
+
+                 case 2:
+                     System.out.println("Listando Produtos...");
+
+                    for (Produto produto : produtos) {
+
+                    System.out.println("ID: " + produto.getId());
+                    System.out.println("Nome: " + produto.getNome());
+                    System.out.println("Sobrenome: " + produto.getSobrenome());
+                    System.out.println("Email: " + produto.getEmail());
+                    System.out.println("Telefone: " + produto.getTelefone());
+
+                     }
+                    break;
+
+                 case 3:
+                    System.out.println("=== Buscar Produto ===");
+                    System.out.println("Digite o ID do produto: ");
+
+                    int idBusca = scanner.nextInt();
+
+                    boolean encontrado = false;
+
+                    for (Produto produto : produto) {
+                        if (produto.getId() == idBusca) {
+                            encontrado = true;
+                            
+                        System.out.println("Produto encontrado!");
+                        System.out.println("ID: " + produto.getId());
+                        System.out.println("Nome: " + produto.getNome());
+                        System.out.println("Sobrenome: " + produto.getSobrenome());
+                        System.out.println("Email: " + produto.getEmail());
+                        System.out.println("Telefone: " + produto.getTelefone());
+
+                        }
+
+                    }
+
+                    if (encontrado == false) {
+                            System.out.println("Produto não encontrado!");
+                        }
+
+                    break;
+
+                 case 4:
+                    System.out.println("=== Atualizar Produto ===");
+                    System.out.println("Digite o ID do produto: ");
+                    int idAtualizar = scanner.nextInt();
+
+                    boolean produtoEncontrado = false;
+
+                    for (Produto produto : produto) {
+                        if (produto.getId() == idAtualizar) {
+                            produtoEncontrado = true;
+
+                            System.out.println("Produto encontrado!");
+
+                            System.out.println("Digite o novo nome: ");
+                            scanner.nextLine();
+                            String novoNome = scanner.nextLine();
+
+                            produto.setNome(novoNome);
+
+                            System.out.println("Digite o novo sobrenome: ");
+                            String novoSobrenome = scanner.nextLine();
+
+                            produto.setSobrenome(novoSobrenome);
+
+                            System.out.println("Digite o novo email: ");
+                            String novoEmail = scanner.nextLine();
+
+                            produto.setEmail(novoEmail);
+
+                            scanner.nextLine();
+
+                            System.out.println("Digite o novo telefone: ");
+                            String novoTelefone = scanner.nextLine();
+
+                            produto.setTelefone(novoTelefone);
+
+                            scanner.nextLine();
+
+                            System.out.println("Produto atualizado com sucesso!");
+                        }
+                    }
+
+                    if (produtoEncontrado == false) {
+                        System.out.println("Produto não encontrado!");
+                    }
+
+                    break;
+
+                 case 5:
+                    
+                    System.out.println("Remover produto");
+                    System.out.println("Digite o ID do produto que deseja remover: ");
+
+                    int idRemover = scanner.nextInt();
+
+                    boolean removido = false;
+
+                    for (int i = 0; i < produto.size(); i++) {
+                        if (produto.get(i).getId() == idRemover) {
+                            produtos.remove(i);
+                            removido = true;
+                            break;
+                            
+                        }
+   
+                    }
+
+                     if (removido) {
+                        System.out.println("Produto removido com sucesso!");
+                     } else {
+                        System.out.println("Produto não encontrado!");
+                    }
+
+                    break;
+
+                 case 0:
+                     System.out.println("Voltando ao menu principal...");
+                    break;
+
+                default:
+                    System.out.println("Opção inválida!");
+        }
+
+            } while (opcaoProduto != 0);
+
+
             break;
 
         case 0:
