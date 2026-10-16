@@ -63,11 +63,11 @@ Desenvolver um sistema de gestão empresarial em Java com foco na aplicação de
 
 ## Fase 4 - Gestão de Produtos
 
-- [ ] Cadastro de produtos
-- [ ] Listagem
-- [ ] Consulta por ID
-- [ ] Atualização de dados
-- [ ] Remoção de produtos
+- [X] Cadastro de produtos
+- [X] Listagem
+- [X] Consulta por ID
+- [X] Atualização de dados
+- [X] Remoção de produtos
 
 ---
 
