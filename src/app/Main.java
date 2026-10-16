@@ -17,6 +17,9 @@ public class Main {
         ArrayList<Cliente> clientes = new ArrayList<>();
         int proximoIdCliente = 1;
 
+        ArrayList<Produto> produtos = new ArrayList<>();
+        int proximoIdProduto = 1;
+
 
         int opcao;
 
@@ -432,12 +435,10 @@ public class Main {
 
                     System.out.println("Quantidade: ");
                     int quantidade = scanner.nextInt();
+                    scanner.nextLine();
 
-                    
+            Produto novoProduto = new Produto(proximoIdProduto, nome, descricao, preco, quantidade);
 
-            Produto novoProduto = new Produto(nome, sobrenome, email, telefone);
-
-            novoProduto.setId(proximoIdProduto);
             proximoIdProduto++;
 
             produtos.add(novoProduto);
@@ -455,11 +456,11 @@ public class Main {
 
                     System.out.println("ID: " + produto.getId());
                     System.out.println("Nome: " + produto.getNome());
-                    System.out.println("Sobrenome: " + produto.getSobrenome());
-                    System.out.println("Email: " + produto.getEmail());
-                    System.out.println("Telefone: " + produto.getTelefone());
+                    System.out.println("Descrição: " + produto.getDescricao());
+                    System.out.println("Preço: " + produto.getPreco());
+                    System.out.println("Quantidade: " + produto.getQuantidade());
+                }
 
-                     }
                     break;
 
                  case 3:
@@ -470,22 +471,22 @@ public class Main {
 
                     boolean encontrado = false;
 
-                    for (Produto produto : produto) {
+                    for (Produto produto : produtos) {
                         if (produto.getId() == idBusca) {
                             encontrado = true;
                             
                         System.out.println("Produto encontrado!");
                         System.out.println("ID: " + produto.getId());
                         System.out.println("Nome: " + produto.getNome());
-                        System.out.println("Sobrenome: " + produto.getSobrenome());
-                        System.out.println("Email: " + produto.getEmail());
-                        System.out.println("Telefone: " + produto.getTelefone());
+                        System.out.println("Descrição: " + produto.getDescricao());
+                        System.out.println("Preço: " + produto.getPreco());
+                        System.out.println("Quantidade: " + produto.getQuantidade());
 
                         }
 
                     }
 
-                    if (encontrado == false) {
+                    if (!encontrado) {
                             System.out.println("Produto não encontrado!");
                         }
 
@@ -498,7 +499,7 @@ public class Main {
 
                     boolean produtoEncontrado = false;
 
-                    for (Produto produto : produto) {
+                    for (Produto produto : produtos) {
                         if (produto.getId() == idAtualizar) {
                             produtoEncontrado = true;
 
@@ -510,22 +511,22 @@ public class Main {
 
                             produto.setNome(novoNome);
 
-                            System.out.println("Digite o novo sobrenome: ");
-                            String novoSobrenome = scanner.nextLine();
+                            System.out.println("Digite a nova descrição: ");
+                            String novaDescricao = scanner.nextLine();
 
-                            produto.setSobrenome(novoSobrenome);
+                            produto.setDescricao(novaDescricao);
 
-                            System.out.println("Digite o novo email: ");
-                            String novoEmail = scanner.nextLine();
+                            System.out.println("Digite o novo preço: ");
+                            double novoPreco = scanner.nextDouble();
 
-                            produto.setEmail(novoEmail);
+                            produto.setPreco(novoPreco);
 
                             scanner.nextLine();
 
-                            System.out.println("Digite o novo telefone: ");
-                            String novoTelefone = scanner.nextLine();
+                            System.out.println("Digite a nova quantidade: ");
+                            int novaQuantidade = scanner.nextInt();
 
-                            produto.setTelefone(novoTelefone);
+                            produto.setQuantidade(novaQuantidade);
 
                             scanner.nextLine();
 
@@ -533,7 +534,7 @@ public class Main {
                         }
                     }
 
-                    if (produtoEncontrado == false) {
+                    if (!produtoEncontrado) {
                         System.out.println("Produto não encontrado!");
                     }
 
@@ -548,8 +549,8 @@ public class Main {
 
                     boolean removido = false;
 
-                    for (int i = 0; i < produto.size(); i++) {
-                        if (produto.get(i).getId() == idRemover) {
+                    for (int i = 0; i < produtos.size(); i++) {
+                        if (produtos.get(i).getId() == idRemover) {
                             produtos.remove(i);
                             removido = true;
                             break;
