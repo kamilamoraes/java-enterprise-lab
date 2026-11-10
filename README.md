@@ -28,8 +28,6 @@ Employee and customer management currently support registration, listing, search
 - Spring Boot
 - PostgreSQL
 - MongoDB
-- Angular
-- Node.js
 - Docker
 
 ## Project Structure
@@ -72,6 +70,5 @@ The roadmap may be adjusted as the project evolves and new requirements or learn
 
 ## Next Steps
 
-- Complete the initial UML class diagram
 - Implement product registration and management
 - Continue improving the project structure as new features are introduced

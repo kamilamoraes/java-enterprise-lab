@@ -21,8 +21,6 @@ Desenvolver um sistema de gestão empresarial em Java com foco na aplicação de
 - Spring Boot
 - PostgreSQL
 - MongoDB
-- Angular
-- Node.js
 - Docker
 - Git
 - GitHub
@@ -30,7 +28,6 @@ Desenvolver um sistema de gestão empresarial em Java com foco na aplicação de
 ## Arquitetura e Ferramentas
 
 - API REST
-- UML (Diagramas)
 - Kanban (GitHub Projects)
 
 ## Fase 1 - Estrutura Inicial
