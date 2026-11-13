@@ -1,19 +1,20 @@
 # java-enterprise-lab
-A long-term Java project documenting the evolution of a backend application.
+
+A long-term Java project documenting the development of a business management system.
 
 ## Objective
 
 Develop a business management system in Java, applying programming concepts, object-oriented programming, software architecture, and backend development practices.
 
-The project will be developed incrementally, following the evolution of my learning process and gradually incorporating technologies and practices commonly used in the industry.
+The project is being developed incrementally, following the evolution of my learning process and gradually incorporating technologies and practices commonly used in the industry.
 
 ## Project Status
 
 🚧 In development
 
-The project is currently evolving from its initial structure into a functional business management system.
+The project currently includes employee, customer, and product management, with complete CRUD operations implemented for all three modules.
 
-Employee and customer management currently support registration, listing, searching by ID, updating data, and removal. Product management is the next planned development stage.
+The next development stage focuses on data persistence, evolving the application beyond its current in-memory data storage.
 
 ## Technologies
 
@@ -40,18 +41,19 @@ src/
         ├── Funcionario.java
         ├── Cliente.java
         └── Produto.java
-
 ```
+
 ## Current Features
 
 - Main application menu
-- Employee domain model
-- Customer domain model
-- Product domain model
+- Employee, customer, and product domain models
 - Object creation using constructors
 - Encapsulation with private attributes, getters, and setters
 - Employee management with complete CRUD operations
 - Customer management with complete CRUD operations
+- Product management with complete CRUD operations
+- Sequential ID assignment for registered records
+- Input validation for management operations
 
 ## Roadmap
 
@@ -70,5 +72,7 @@ The roadmap may be adjusted as the project evolves and new requirements or learn
 
 ## Next Steps
 
-- Implement product registration and management
-- Continue improving the project structure as new features are introduced
+- Implement data persistence
+- Integrate a relational database
+- Continue evolving the application architecture
+- Improve code organization and maintainability
