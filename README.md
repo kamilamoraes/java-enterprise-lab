@@ -1,78 +1,130 @@
-# java-enterprise-lab
 
-A long-term Java project documenting the development of a business management system.
+# Java Enterprise Lab
 
-## Objective
+A long-term project focused on building an enterprise management system with a robust backend architecture and data intelligence capabilities.
 
-Develop a business management system in Java, applying programming concepts, object-oriented programming, software architecture, and backend development practices.
+## About the Project
 
-The project is being developed incrementally, following the evolution of my learning process and gradually incorporating technologies and practices commonly used in the industry.
+Java Enterprise Lab is an evolving software project designed to apply software engineering principles to the development of an enterprise management platform.
 
-## Project Status
+The project goes beyond basic CRUD operations, gradually incorporating business processes, data persistence, REST APIs, automation, auditing, analytics, and machine learning capabilities.
 
-🚧 In development
+Development is organized into incremental phases, prioritizing code quality, maintainability, and practical learning.
 
-The project currently includes employee, customer, and product management, with complete CRUD operations implemented for all three modules.
+## Project Goals
 
-The next development stage focuses on data persistence, evolving the application beyond its current in-memory data storage.
+- Develop a structured enterprise management system.
+- Apply object-oriented programming and software architecture principles.
+- Build a robust backend using Java and Spring Boot.
+- Implement relational database persistence.
+- Develop business rules and automated processes.
+- Integrate data analysis and machine learning capabilities.
+- Improve software quality through testing and documentation.
+
+## Current Status
+
+The project is currently in its initial development stage.
+
+Completed:
+- Initial project structure.
+- Employee management module.
+- Customer management module.
+- Product management module.
+- CRUD operations for all three modules.
+
+The current implementation uses in-memory collections. Database persistence and backend architecture improvements are planned for upcoming phases.
 
 ## Technologies
 
 ### Currently Used
-
 - Java
 - Git
 - GitHub
 
-### Planned
-
+### Planned Technologies
 - Spring Boot
 - PostgreSQL
-- MongoDB
+- Spring Data JPA
+- Hibernate
+- Flyway
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
 - Docker
+
+MongoDB may be evaluated in the future if a specific technical requirement justifies its use.
 
 ## Project Structure
 
 ```text
-src/
-└── app/
-    ├── Main.java
-    └── model/
-        ├── Funcionario.java
-        ├── Cliente.java
-        └── Produto.java
+java-enterprise-lab/
+│
+├── src/
+│   └── app/
+│       ├── Main.java
+│       └── model/
+│           ├── Funcionario.java
+│           ├── Cliente.java
+│           └── Produto.java
+│
+├── docs/
+│   └── ROADMAP.md
+│
+├── README.md
+└── README.pt-BR.md
 ```
 
 ## Current Features
 
-- Main application menu
-- Employee, customer, and product domain models
-- Object creation using constructors
-- Encapsulation with private attributes, getters, and setters
-- Employee management with complete CRUD operations
-- Customer management with complete CRUD operations
-- Product management with complete CRUD operations
-- Sequential ID assignment for registered records
-- Input validation for management operations
+- Main application menu.
+- Employee management.
+- Customer management.
+- Product management.
+- Object-oriented model classes.
+- Constructors, getters, and setters.
+- Encapsulation.
+- CRUD operations using Java collections.
 
-## Roadmap
+## Development Roadmap
 
-The project will evolve through the following stages:
+1. Initial Structure — Completed
+2. Employee Management — Completed
+3. Customer Management — Completed
+4. Product Management — Completed
+5. Architecture and Data Persistence
+6. REST API and Backend Evolution
+7. Advanced Business Management and Inventory
+8. Financial Management
+9. Automation and Auditing
+10. Dashboard and Data Analysis
+11. Machine Learning and Predictive Analytics
+12. Security and Infrastructure
+13. Testing, Quality, and Documentation
 
-1. Initial Structure
-2. Employee Management
-3. Customer Management
-4. Product Management
-5. Data Persistence
-6. Java Enterprise Evolution
-7. Infrastructure
-8. Quality and Documentation
+## Machine Learning Capabilities
 
-The roadmap may be adjusted as the project evolves and new requirements or learning goals are identified.
+Machine learning will be introduced gradually, after the application has a reliable data foundation.
 
-## Next Steps
+Planned applications include:
 
-- Implement data persistence
-- Integrate a relational database
-- Continue evolving the application architecture
-- Improve code organization and maintainability
+- **Demand and Inventory Forecasting:** predicting product demand and identifying potential stock shortages.
+- **Financial Anomaly Detection:** identifying unusual financial transactions and patterns.
+- **Customer Segmentation:** grouping customers based on purchasing behavior.
+
+Python will be used for data processing and machine learning, while Java will remain the core backend technology.
+
+## Development Approach
+
+The project is developed incrementally, with each phase building upon the previous one.
+
+The main priorities are:
+- Code quality and maintainability.
+- Clear separation of responsibilities.
+- Reliable data management.
+- Practical implementation of software engineering concepts.
+- Continuous improvement and documentation.
+
+## Project Vision
+
+The long-term goal is to evolve this project into a complete enterprise management platform, combining backend engineering, business processes, and data intelligence.
